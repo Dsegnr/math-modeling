@@ -4,7 +4,7 @@
 
 > 题目：在 1000 μm³ 的微构体中随机填充导电介质，研究导通性、导通概率、临界体积分数与最低成本配置。
 
-**📄 [论文全文直链（CDN，国内可访问）](https://cdn.jsdelivr.net/gh/Dsegnr/math-modeling@main/huashubei-2026/paper/%E5%8D%8E%E6%95%B0%E6%9D%AF2026_A%E9%A2%98_%E8%AE%BA%E6%96%87.pdf)**
+**📄 [在线阅读论文全文](https://dsegnr.github.io/papers/huashubei-2026-A-composite.pdf)**　（GitHub 自带的 PDF 预览在部分网络下不可用；此链接托管于 GitHub Pages，直接由浏览器打开）
 
 **口径 C1**：介质完全悬浮于微构体内部（位置均匀、方向球面均匀），越界构型视为不合法并拒绝重采。附件按"截断分段"理解。
 

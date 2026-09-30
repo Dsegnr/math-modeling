@@ -4,7 +4,7 @@
 
 > 题目：某自来水厂连续 15 个月的高频监测数据，要求识别出厂水浊度的关键影响因素、刻画动态传递过程、建立预测模型并开展风险预警。
 
-**📄 [论文全文直链（CDN，国内可访问）](https://cdn.jsdelivr.net/gh/Dsegnr/math-modeling@main/apmcm-2026/paper/Aapmcm26203467.pdf)**
+**📄 [在线阅读论文全文](https://dsegnr.github.io/papers/apmcm-2026-A-water-quality.pdf)**　（GitHub 自带的 PDF 预览在部分网络下不可用；此链接托管于 GitHub Pages，直接由浏览器打开）
 
 ## 四问的方法与结果
 
