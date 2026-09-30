@@ -2,6 +2,14 @@
 
 两次数学建模竞赛的完整产出——论文、代码、数据与结果表，均可复现。
 
+> ### 📄 论文入口（点这里看论文）
+>
+> **APMCM 2026 · A 题**　→　<https://dsegnr.github.io/papers/apmcm-2026-A-water-quality.pdf>
+>
+> **华数杯 2026 · A 题**　→　<https://dsegnr.github.io/papers/huashubei-2026-A-composite.pdf>
+>
+> ⚠️ **不要点仓库文件列表里的 `Aapmcm26203467.pdf`** —— GitHub 自带的 PDF 预览需要从 `raw.githubusercontent.com` 读取文件，该域名在部分网络环境下不可达，会显示「Invalid PDF」。这不代表文件损坏（已用 pdf.js 实测解析通过、哈希与本地一致）。上面两个链接托管在 GitHub Pages，由浏览器原生阅读器打开，可稳定访问。
+
 ---
 
 ## APMCM 2026 · 第十六届亚太地区大学生数学建模竞赛（中文赛项）
