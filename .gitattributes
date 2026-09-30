@@ -1,0 +1,14 @@
+# 二进制文件一律不做行尾转换，避免被 Git 的行尾规范化破坏
+*.pdf  binary
+*.png  binary
+*.jpg  binary
+*.jpeg binary
+*.gif  binary
+*.docx binary
+*.xlsx binary
+*.pkl  binary
+
+# 文本文件统一 LF
+*.py   text eol=lf
+*.md   text eol=lf
+*.csv  text eol=lf
