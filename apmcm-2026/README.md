@@ -4,6 +4,8 @@
 
 > 题目：某自来水厂连续 15 个月的高频监测数据，要求识别出厂水浊度的关键影响因素、刻画动态传递过程、建立预测模型并开展风险预警。
 
+**📄 [论文全文直链（CDN，国内可访问）](https://cdn.jsdelivr.net/gh/Dsegnr/math-modeling@main/apmcm-2026/paper/Aapmcm26203467.pdf)**
+
 ## 四问的方法与结果
 
 ### 问题一 · 影响因素识别

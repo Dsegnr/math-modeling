@@ -17,6 +17,8 @@
 
 `paper/` 论文（32 页）　`code/` 六个阶段的 Python 脚本　`figures/` 技术路线图与 SHAP/诊断图　`output/` 四问预测与评估结果表　`data/` 清洗后数据
 
+📄 论文直链（CDN，国内可访问）：[APMCM 2026 · A 题论文](https://cdn.jsdelivr.net/gh/Dsegnr/math-modeling@main/apmcm-2026/paper/Aapmcm26203467.pdf)
+
 ---
 
 ## 华数杯 2026 · 第七届全国大学生数学建模竞赛
@@ -34,11 +36,13 @@
 
 `paper/` 论文　`code/` 35 个脚本（含公共几何库与可视化脚本）　`figures/` 32 张成品图　`output/` 24 个三线表 CSV + 结果包　`data/` 题目附件与蒙特卡洛原始记录
 
+📄 论文直链（CDN，国内可访问）：[华数杯 2026 · A 题论文](https://cdn.jsdelivr.net/gh/Dsegnr/math-modeling@main/huashubei-2026/paper/%E5%8D%8E%E6%95%B0%E6%9D%AF2026_A%E9%A2%98_%E8%AE%BA%E6%96%87.pdf)
+
 ---
 
 ## 说明
 
 - 两篇论文均按赛事要求**不含任何个人信息**，为匿名提交版本。
-- APMCM 论文原始 PDF 由 WPS 导出，GitHub 的在线预览器（pdf.js）无法解析，已用 Word 从同一份 `.docx` 重新导出（内容逐字一致，页数 32 → 29 为排版差异），以便在线阅读。
+- **关于论文打不开**：GitHub 的 PDF 在线预览需要从 `raw.githubusercontent.com` 拉取文件，该域名在部分网络环境下不稳定，因此预览可能失败（文件本身完好，已用 pdf.js 实测可正常解析）。上面的 CDN 直链走 jsDelivr，可稳定打开。
 - 代码为参赛时使用的原始版本，部分脚本依赖当时的中间数据，`output/` 与 `figures/` 中保留了完整结果，可直接查看。
 - 赛事已结束，作品在此存档，供交流参考。
