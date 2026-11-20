@@ -1,0 +1,77 @@
+\newpage
+\section*{附录}
+
+\subsection*{附录 A　支撑材料文件列表}
+
+本参赛作品的支撑材料压缩包按 code / figures / tables / latex 四部分组织，共收录 Python 脚本 46 个、航点布局数据文件 1 个、SHA-256 校验清单 1 个（以上合计 48 个文件），另有 LaTeX 源码与附录代码摘录 10 个、插图 24 张（PNG 格式，其中 6 张另附同名 PDF 矢量版）、数据表 13 个；连同本清单与《AI 工具使用详情.pdf》，压缩包共 103 个文件。行为日志由模拟器导出，不计入压缩包。程序文件的结构与用途如表 A1 所示，插图与数据表如表 A2 所示，行为日志如表 A3 所示。
+
+\begin{table}[htbp]
+\centering
+\caption*{表 A1　支撑材料中的程序与数据文件（46 个脚本 + 1 个布局数据 + 1 个校验清单 + LaTeX 源码）}
+{\zihao{5}\resizebox{\textwidth}{!}{\begin{tabular}{c c c c}
+\toprule
+目录 & 文件数 & 代表文件 & 说明 \\
+\midrule
+code/01\_冻结执行版 & 2 & run6\_robust.py、waypoints\_p4.json & 主策略（问题三、四通用）与问题四航点布局 \\
+code/02\_核心算法代码 & 8 & q1\_q2\_analysis.py、q4\_detect\_cover.py & 问题一、二数值实验，建证集与全域证书求解，L2/L3 审计，离线复现器与时间分解 \\
+code/03\_绘图与可视化 & 8 & ch78\_figures.py、ch8\_q4\_figures.py & 论文插图与设计期流程图的绘制脚本 \\
+code/04\_其他实验与过程 & 29 & q3\_layout\_opt.py、q4\_prefix\_eval.py & 布局选型、策略开关、消融与被否决方案的验证脚本 \\
+latex/ & 10 & main.tex、appendix.tex、appendix\_code\_excerpt/ & 论文与附录的 LaTeX 源码、AI 详情源码及附录代码摘录（编译说明见该目录 说明.md） \\
+SHA-256 校验清单 & 1 & \_哈希清单.txt & 冻结执行版两个文件（主策略与航点布局）的 SHA-256 校验值 \\
+\bottomrule
+\end{tabular}}}
+\end{table}
+
+\begin{table}[htbp]
+\centering
+\caption*{表 A2　支撑材料中的图件与数据表}
+{\zihao{5}\resizebox{\textwidth}{!}{\begin{tabular}{c c c}
+\toprule
+类别 & 数量 & 说明 \\
+\midrule
+插图（fig\_*） & 24 张 & 与正文图 1$\sim$12 及附录图 D1$\sim$D6 一一对应；均为 PNG 格式，其中 6 张另附同名 PDF 矢量版 \\
+数据表（tab\_*） & 13 个 & 正文与附录中三线表与关键插图的源数据，含问题一覆盖统计、问题二效用与鲁棒性、问题三证书与演练汇总、问题四证书与可定位性审计、演练案例空间等 \\
+行为日志（.jlog） & 按需附 & 演练按局导出（本文统计样本 34 局，见附录表 D2、D3；案例空间见附录表 D1）与正式测试每问 3 局；正式测试日志不得改名 \\
+\bottomrule
+\end{tabular}}}
+\end{table}
+
+\begin{table}[htbp]
+\centering
+\caption*{表 A3　行为日志清单（演练按局导出，本文统计样本 34 局；正式测试每问 3 局）}
+{\zihao{5}\resizebox{\textwidth}{!}{\begin{tabular}{c c c}
+\toprule
+类别 & 命名 & 说明 \\
+\midrule
+正式测试 & formal-p3-*.jlog、formal-p4-*.jlog & 每问 3 局，正式成绩即由这 6 局产生；文件名不得修改 \\
+演练测试 & practice-p3-*.jlog、practice-p4-*.jlog & 演练日志按局保存；本文统计样本 34 局（附录表 D2、D3），案例空间覆盖见附录表 D1 \\
+\bottomrule
+\end{tabular}}}
+\end{table}
+
+\subsection*{附录 B　正文中移出与补充的图表}
+
+正文中部分明细表与补充图按“正文只留结论、明细入附录”的方式组织，全部编号为 附录表 D1$\sim$D11 与 附录图 D1$\sim$D6，正文引用处已一一对应。
+
+\input{appendix_moved.tex}
+\FloatBarrier
+
+\subsection*{附录 C　核心源程序代码}
+
+附录按“正文只留结论、代码只留核心”的方式收录主策略程序与各问核心算法的关键函数，完整可运行源程序（46 个脚本）随支撑材料提供。复现环境为 Python 3.12，仅使用标准库与 NumPy、SciPy、Matplotlib；策略进程与模拟器通过本地 HTTP 接口交互，无外部依赖、无训练过程。运行方式：设置环境变量 \texttt{CUMCM\_ROBOT\_ID} 后执行 \texttt{python run6\_robust.py p3}（问题四改为 p4）。代码中的本机路径已替换为占位说明，参赛队号以环境变量注入。附录代码均为参赛队自研实现，未复制任何第三方源码；最小外接圆、凸包与旋转卡壳、Huber 加权最小二乘等经典算法的通用参考见参考文献\upcite{ref:Jung,ref:Huber,ref:CG,ref:Andrew}。
+
+\subsubsection*{C.1　主策略程序 run6\_robust.py（核心函数摘录）}
+\lstinputlisting[style=codeappx]{appendix_code_excerpt/run6_robust.py}
+
+\subsubsection*{C.2　问题四全域保证检出证书 q4\_detect\_cover.py（核心函数摘录）}
+\lstinputlisting[style=codeappx]{appendix_code_excerpt/q4_detect_cover.py}
+
+\subsubsection*{C.3　问题三建证集 q3\_certset.py（核心函数摘录）}
+\lstinputlisting[style=codeappx]{appendix_code_excerpt/q3_certset.py}
+
+\subsubsection*{C.4　问题四 L2/L3 可定位性审计 q4\_l2l3\_audit.py（核心函数摘录）}
+\lstinputlisting[style=codeappx]{appendix_code_excerpt/q4_l2l3_audit.py}
+
+\subsubsection*{C.5　问题一、二数值实验 q1\_q2\_analysis.py（核心函数摘录）}
+\lstinputlisting[style=codeappx]{appendix_code_excerpt/q1_q2_analysis.py}
+

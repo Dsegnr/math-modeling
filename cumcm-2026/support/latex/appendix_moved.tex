@@ -1,0 +1,304 @@
+% ===== 从正文移出的表格（附录用，2026-09-12 重建）=====
+
+\begin{table}[htbp]
+\centering
+\caption*{表 D1　演练案例空间覆盖（最终配置下的演练辅助样本，含反证与压力实验；正式测试案例见正文表 3、表 5 与附录表 D11）}
+{\zihao{5}\begin{tabular}{c c c c c}
+\toprule
+问题 & 源数 & 全向源数 & 定向源数 & 案例数 \\
+\midrule
+\midrule
+3 & 10 & 10 & 0 & 2 \\
+3 & 11 & 11 & 0 & 7 \\
+3 & 12 & 12 & 0 & 2 \\
+3 & 13 & 13 & 0 & 5 \\
+3 & 14 & 14 & 0 & 2 \\
+3 & 15 & 15 & 0 & 3 \\
+3 & 16 & 16 & 0 & 7 \\
+4 & 10 & 3 & 7 & 2 \\
+4 & 10 & 9 & 1 & 1 \\
+4 & 11 & 0 & 11 & 1 \\
+4 & 11 & 10 & 1 & 1 \\
+4 & 11 & 2 & 9 & 1 \\
+4 & 12 & 11 & 1 & 1 \\
+4 & 12 & 7 & 5 & 2 \\
+4 & 12 & 8 & 4 & 1 \\
+4 & 13 & 11 & 2 & 1 \\
+4 & 13 & 2 & 11 & 1 \\
+4 & 13 & 8 & 5 & 1 \\
+4 & 14 & 10 & 4 & 1 \\
+4 & 14 & 5 & 9 & 2 \\
+4 & 14 & 6 & 8 & 1 \\
+4 & 14 & 8 & 6 & 1 \\
+4 & 15 & 11 & 4 & 1 \\
+4 & 15 & 14 & 1 & 1 \\
+4 & 16 & 5 & 11 & 1 \\
+4 & 16 & 8 & 8 & 1 \\
+\bottomrule
+\end{tabular}}
+\end{table}
+
+\begin{table}[htbp]
+\centering
+\caption*{表 D2　问题三最终配置与对照局的演练记录（辅助样本；单环 990 m$\times$15 建证集 + 顺路清除，含加固后回归复测 2 局）}
+{\zihao{5}\resizebox{\ifdim\width>\linewidth\linewidth\else\width\fi}{!}{\begin{tabular}{c c c c c c}
+\toprule
+局 & 源数 & 清除 & 虚拟时间 / s & 平均耗时 /(s/源) & 终止方式 \\
+\midrule
+Q3-12 & 10 & 10 & 3981.0 & 398 & 单环 990 m$\times$15 建证集扫完 \\
+Q3-13 & 15 & 15 & 4324.5 & 288 & 单环 990 m$\times$15 建证集扫完 \\
+Q3-14 & 15 & 15 & 4372.8 & 291 & 单环 990 m$\times$15 建证集扫完 \\
+Q3-15 & 11 & 11 & 4306.1 & 391 & 按条数停测=2 \\
+Q3-16 & 16 & 16 & 6350.9 & 397 & 源数上界终止 \\
+Q3-17 & 15 & 15 & 5189.8 & 346 & 单环 \\
+Q3-18 & 16 & 16 & 4207.7 & 263 & 源数上界终止 \\
+Q3-19 & 16 & 16 & 4870.1 & 304 & 源数上界终止 \\
+Q3-20 & 12 & 12 & 4431.2 & 369 & 单环 \\
+Q3-21 & 16 & 16 & 4762.1 & 298 & 源数上界终止 \\
+Q3-22 & 10 & 10 & 5059.5 & 506 & 建证集扫完 \\
+Q3-23 & 13 & 13 & 4485.2 & 345 & 建证集扫完 \\
+Q3-P1 & 10 & 10 & 3818.5 & 381.8 & 压力测试：建证集削到 6 点（补测未触发） \\
+Q3-P2 & 11 & 11 & 7117.0 & 647 & 压力测试：建证集削到 4 点（补测触发 6 次均成功） \\
+P3-R1 & 16 & 16 & 4705.8 & 294 & 加固后回归复测（延伸试探/法向复测/空清上限） \\
+P3-R2 & 14 & 14 & 4389.3 & 314 & 加固后回归复测 \\
+\bottomrule
+\end{tabular}}}
+\end{table}
+
+\begin{table}[htbp]
+\centering
+\caption*{表 D3　问题四最终配置与对照局的演练记录（辅助样本；31 点证书 + 顺路清除 + 单观测补测，含反证与压力实验、加固后复测 5 局）}
+{\zihao{5}\resizebox{\ifdim\width>\linewidth\linewidth\else\width\fi}{!}{\begin{tabular}{c c c c c c}
+\toprule
+局 & 源数 & 清除率 & 虚拟时间 / s & 平均耗时 /(s/源) & 策略版本 \\
+\midrule
+Q4-5 & 15 & 100\% & 8339.5 & 556.0 & 31 点证书 + 顺路清除 \\
+Q4-6 & 14 & 100\% & 8560.3 & 611.4 & 31 点证书 + 顺路清除 \\
+Q4-7 & 11 & 100\% & 7610.6 & 691.9 & 31 点证书 + 顺路清除（绕道判据修正） \\
+Q4-8 & 13 & 100\% & 7061.0 & 543.2 & 累计 $\ge$3 条示向度才开清（零复测） \\
+Q4-10 & 10 / 14 & 71\% & 5397.9 & — & 反证实验：去掉外环（仅内环 990 m$\times$15），漏检 4 源 \\
+Q4-11 & 15（11 全向 + 4 定向） & 100\% & 6254.2 & 416.9 & 全向多于定向的构成下最快一局 \\
+Q4-12 & 16 & 100\% & 6541.3 & 408.8 & 加入单观测主动补测 \\
+Q4-13 & 12 & 100\% & 8575.0 & 714.6 & 补测阈值放宽到 $\le$2（正常流程未触发） \\
+Q4-14 & 11（10 全向 + 1 定向） & 100\% & 6542.0 & 594.7 & 补测候选扩到 8 个 \\
+Q4-15 & 13 & 100\% & 7756.6 & 596.7 & 冻结版 \\
+Q4-16 & 14 & 100\% & 6628.8 & 473.5 & 冻结版冒烟 \\
+Q4-P1 & 8 / 11 & 73\% & 5976.9 & — & 压力测试：外环人为削弱到 6 点（暴露 VISITED 顺序缺陷） \\
+Q4-P2 & 12 & 100\% & 8697.8 & 724.8 & 压力测试：修复后重跑（补测触发 2 次且均成功，见 9.3） \\
+P4-R1 & 15 & 100\% & 6563.7 & 437.6 & 加固后复测（延伸试探 + 法向复测） \\
+P4-R2 & 13 & 100\% & 6877.7 & 529.1 & 加固后复测 \\
+P4-R3 & 15 & 100\% & 7854.8 & 523.7 & 加固后复测 \\
+P4-R4 & 12 & 100\% & 7987.6 & 665.6 & 加固后复测（含单频道空清上限） \\
+P4-R5 & 16 & 100\% & 6420.6 & 401.3 & 加固后复测（含单频道空清上限） \\
+\bottomrule
+\end{tabular}}}
+\end{table}
+
+
+\begin{table}[htbp]
+\centering
+\caption*{表 D4　证书前缀与全程的可定位性（5 m$\times$1$^\circ$ 口径）}
+{\zihao{5}\begin{tabular}{c c c c}
+\toprule
+巡回前缀 & L1 保证检出率 & L2 两点可定位率 & 全域最坏角隙 \\
+\midrule
+新 31 点证书前缀 & 100.00\% & 95.56\% & — \\
+新 81 点全程 & 100.00\% & 99.82\% & 127.7° \\
+\bottomrule
+\end{tabular}}
+\end{table}
+
+\begin{table}[htbp]
+\centering
+\caption*{表 D5　可定位性（L2/L3）全域审计（20 m$\times$10$^\circ$ 网格口径；细网格 5 m$\times$1$^\circ$ 的 L1/L2 见表 D4）}
+{\zihao{5}\resizebox{\ifdim\width>\linewidth\linewidth\else\width\fi}{!}{\begin{tabular}{c c c c c}
+\toprule
+航点集合 & 累计航点数 & L1 必检出 / \% & L2 可见点$\ge$2 / \% & L3 交会角$\ge$30° / \% \\
+\midrule
+内环 13 点 & 13 & 78.05 & 64.66 & 46.03 \\
+证书段（内环 13 + 外环 18） & 31 & 100.0 & 96.18 & 92.7 \\
+证书段 + 前 19 个补给点 & 50 & 100.0 & 97.93 & 95.69 \\
+证书段 + 全部 50 个补给点 & 81 & 100.0 & 99.89 & 99.37 \\
+\bottomrule
+\end{tabular}}}
+\end{table}
+
+
+
+
+\begin{table}[htbp]
+\centering
+\caption*{表 D6　问题三与问题四对照组的虚拟时间构成分解（按式~\eqref{eq:time-decomp} 分解）}
+{\zihao{5}\resizebox{\ifdim\width>\linewidth\linewidth\else\width\fi}{!}{\begin{tabular}{c c c c c c c}
+\toprule
+策略版本 & 虚拟时间 / s & 移动 / s & 检测 / s & 切频 / s & 清除 / s & 移动占比 \\
+\midrule
+问题三：立即跑去清除（9 局平均） & 8046 & 6829 & 941 & 187 & 89 & 84.9\% \\
+问题三：顺路清除（Q3-9～Q3-11 平均） & 5300 & 3765 & 1212 & 241 & 83 & 71.0\% \\
+问题三：单环 990 m$\times$15（Q3-12、Q3-13 平均） & 4153 & 2881 & 983 & 196 & 94 & 69.4\% \\
+问题四：立即跑去清除（Q4-3、Q4-4 平均） & 10962 & 8931 & 1568 & 310 & 154 & 81.5\% \\
+问题四：顺路清除（Q4-5～Q4-7 平均） & 8170 & 5691 & 2010 & 401 & 69 & 69.7\% \\
+\bottomrule
+\end{tabular}}}
+\end{table}
+
+\begin{table}[htbp]
+\centering
+\caption*{表 D7　问题二基准场景的几何量与补充数值}
+{\zihao{5}\resizebox{\ifdim\width>\linewidth\linewidth\else\width\fi}{!}{\begin{tabular}{c c c}
+\toprule
+量 & 数值 & 说明 \\
+\midrule
+基准$d_1$ / m & 1200 & $S_1=(0,0)$、$G=(0,1200)$ \\
+单点观测$D_1$ / m & 1500.06 & 仅含径向不确定度 \\
+最优$S_2$ & (10.5, 1200.0) & — \\
+最优$d_2$ / m & 10 & — \\
+最优交会角 / 度 & 89.7 & — \\
+$D_{\min}$ / m & 31.44 & 精确几何 \\
+相对单次增益 & 47.7 倍 & $D_1/D_{\min}$ \\
+解析与数值最优点偏差 & 0.0 m / 0.0 度 & — \\
+垂线偏移拐点$a^{*}$ / m & 20.95 & $a^{*}=d_1\tan1^\circ$ \\
+可执行最优$D$ / m & 65.76 & 源位置未知、要求第二点保证可收 \\
+可执行最优增益 & 22.8 倍 & $D_1/D$ \\
+解析平台值 / m & 41.89 & $2d_1\tan1^\circ$，非最优值 \\
+解析 vs 精确相关系数（全网格） & 0.82089 & 含近退化几何 \\
+解析 vs 精确相关系数（$d_2\ge200$ m） & 0.82112 & 缩放律适用区 \\
+$a=5.5$ m 时 $D$ / m & 26.46 & 受 5 米盲区约束的下界 \\
+$a=a^{*}$ 时 $D$ / m & 41.47 & 拐点 \\
+$a=200$ m 时 $D$ / m & 42.48 & 平台段 \\
+稳健推荐偏移 / m & 41.9 & 落在平台起点，对估计误差不敏感 \\
+$R_{\rm recv}$ 定义 & $\Omega_1$ 全部极点对应各 1000 米圆盘之交 & 精确保证可收集；一般不是圆盘 \\
+圆盘外近似圆心 / 半径 / m & (0, 750) / 661.44 & 仅作对照，用于保证型优化不安全 \\
+可执行最优$\ell$ / m & 920 & 沿示向线前进量 \\
+可执行最优$g$ / m & $-$392 & 侧向偏移 \\
+可执行最优交会角 / 度 & 54.5 & — \\
+\bottomrule
+\end{tabular}}}
+\end{table}
+\begin{table}[htbp]
+\centering
+\caption*{表 D8　优化路径的检验结论}
+{\zihao{5}\resizebox{\ifdim\width>\linewidth\linewidth\else\width\fi}{!}{\begin{tabular}{c c c}
+\toprule
+优化 & 结论 & 判据 \\
+\midrule
+建证集替代经验布局（Q3 17 点、Q4 31 点） & 采纳 & 覆盖能力提升且里程下降 \\
+证书式终止替代启发式终止 & 采纳 & 终止可证明安全（命题 8.3） \\
+顺路清除替代立即清除 & 采纳 & Q3 移动 6829 降至 3765 s、总时间 8046 降至 5300 s；Q4 移动 8931 降至 5691 s、总时间 10962 降至 8170 s \\
+单环 990 m$\times$15 替代 17 点交会友好建证集 & 采纳 & Q3 巡回 13710 降至 6753 m、平均 5300 降至 4153 s（离线 5275 降至 4039 s，-23\%） \\
+清除试探点由 $\pm$20 m 收紧至 $\pm$18 m & 采纳（对冲） & 实测 $\pm$20 m 试探点偶有失败，疑判据为“严格 <20 m”；$\pm$18 m 对两种判据都安全 \\
+\bottomrule
+\end{tabular}}}
+\end{table}
+
+\begin{table}[htbp]
+\centering
+\caption*{表 D9　策略开关对照（单环 990 m$\times$15，400 局同种子）}
+{\zihao{5}\resizebox{\ifdim\width>\linewidth\linewidth\else\width\fi}{!}{\begin{tabular}{c c c c c}
+\toprule
+配置 & 平均总时间/s & 移动/s & 检测/s & measure 次数 \\
+\midrule
+顺路清除 + 累计 $\ge$3 条示向度才停测、才动身清除（本文采用） & 4109 & 2893 & 975 & 192 \\
+仅按条数：取得 2 条即停测 & 4202（σ=0.05° 时 5.5 次清除失败/局） & 2893 & 902 & 180 \\
+仅按条数：取得 3 条即停测 & 4114 & 2893 & 975 & 193 \\
+顺序自适应（纯最近任务，无近旁优惠） & 4566 & 3464 & 865 & 173 \\
+覆盖子集前置 + 动态终止 & 5062 & 3826 & 977 & 195 \\
+关闭顺路清除（改为立即前往） & 5721 & 3857 & 1500 & 300 \\
+\bottomrule
+\end{tabular}}}
+\end{table}
+
+
+\begin{table}[htbp]
+\centering
+\caption*{表 D10　两点交会构型的直径与覆盖判据统计（含极值搜索比值上界）}
+{\zihao{5}\resizebox{\ifdim\width>\linewidth\linewidth\else\width\fi}{!}{\begin{tabular}{c c c}
+\toprule
+指标 & 数值 & 说明 \\
+\midrule
+采样例数 & 2000 & 两点交会，源位在半径 1700 米内均匀 \\
+直径中位数 / m & 56.83 & 定位区域直径 \\
+$\rho_{\min}/(D/2)$ 最大值 & 1.000457 & 实测 \\
+不满足覆盖比例 & 1.50\% & 阈值$1+10^{-9}$ \\
+不满足覆盖比例（含浮点平局） & 11.35\% & 阈值 1，口径敏感性对照 \\
+Wilson 95\% 置信区间 & [1.05\%, 2.13\%] & — \\
+$\rho_{\min}/(D/2)$ 中位数 & 1.000000 & — \\
+极值搜索（2 点 20 万例；3～6 点各 6 万例） & 1.0006～1.0043 & 随机极值上界 \\
+最坏构型（三点偏移） & 1.154701 & 反例族 \\
+Jung 上界$2/\sqrt3$ & 1.154701 & — \\
+旋转卡壳 vs 暴力枚举最大偏差 / m & $1.137\times10^{-13}$ & 算法一致性 \\
+\bottomrule
+\end{tabular}}}
+\end{table}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.62\linewidth]{fig_case_space.png}
+\caption*{图 D1　演练案例空间覆盖（源数与全向/定向构成）}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.62\linewidth]{fig_q3_time.png}
+\caption*{图 D2　六次正式测试的虚拟时间构成分解（全部取自正式测试运行日志）}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.62\linewidth]{fig_q1_ratio_hist.png}
+\caption*{图 D3　覆盖判据的口径敏感性与尾部互补分布}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.62\linewidth]{fig_q4_cover.png}
+\caption*{图 D4　全域保证检出证书的覆盖能力曲线与最坏情形}
+\end{figure}
+
+\begin{table}[htbp]
+\centering
+\caption*{表 D11　六次正式测试运行明细（正式成绩见表 3 与表 5）}
+{\zihao{5}\resizebox{\ifdim\width>\linewidth\linewidth\else\width\fi}{!}{\begin{tabular}{c c c c c c c c}
+\toprule
+局次 & 测试案例编码 & 源数 & 清除 & 虚拟时间 / s & 平均 /(s/源) & 程序运行 / s & 请求数 \\
+\midrule
+\midrule
+问题三·第 1 局 & 6A7K-XC7T-GK8K-7GGK & 11 & 11 & 4792.8 & 435.7 & 1.6 & 256 \\
+\midrule
+问题三·第 2 局 & UEVE-DGYC-PJJ2-VFHY & 13 & 13 & 4314.4 & 331.9 & 2.5 & 225 \\
+\midrule
+问题三·第 3 局 & CGP2-9BMC-G7MB-HR8D & 11 & 11 & 4591.6 & 417.4 & 1.7 & 253 \\
+\midrule
+问题四·第 1 局 & TY66-BXB7-63BJ-M3Z6 & 11 & 11 & 6392.4 & 581.1 & 3.1 & 368 \\
+\midrule
+问题四·第 2 局 & N3D8-NNPH-3ZCJ-TVQC & 15 & 15 & 7561.7 & 504.1 & 3.3 & 336 \\
+\midrule
+问题四·第 3 局 & V3VE-CRSQ-5SMB-NHG6 & 11 & 11 & 6823.4 & 620.3 & 3.1 & 351 \\
+\bottomrule
+\end{tabular}}}
+\end{table}
+
+六局均以覆盖证书终止（问题三为建证集 15 点扫完，问题四为证书前缀 31 点扫完），
+六局共 142 次 \texttt{/clear} 调用，其中 72 次命中、与 72 个已清除源一一对应（每个源恰好清除一次，无重复清除），另 70 次为候选试探落空（\texttt{no\_target\_in\_range}）；第 2 局的兜底分支触发情况见正文图~\ref{fig:q4-fallback}。
+
+\begin{figure}[htbp]
+\centering
+\begin{minipage}[t]{0.46\linewidth}\centering
+\includegraphics[width=\linewidth]{fig_q3_stress.png}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.46\linewidth}\centering
+\includegraphics[width=\linewidth]{fig_q3_stress_progress.png}
+\end{minipage}
+\caption*{图 D5　问题三压力测试：左为稀疏建证集逼出的单观测情形，右为建证集走完后由补测与收尾完成清除}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\begin{minipage}[t]{0.48\linewidth}\centering
+\includegraphics[width=\linewidth]{fig_single_fix.png}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.48\linewidth}\centering
+\includegraphics[width=\linewidth]{fig_stress.png}
+\end{minipage}
+\caption*{图 D6　左：单观测主动补测的几何原理；右：问题四压力测试——削弱外环逼出单观测情形}
+\end{figure}

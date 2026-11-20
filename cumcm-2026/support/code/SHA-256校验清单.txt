@@ -1,0 +1,3 @@
+冻结执行版（主策略与航点布局）SHA-256 校验值
+8072247725a614e79cd1c6e20e4732f4ecad447b80538b2ea481a78dc0406cf5  run6_robust.py
+95f599e0e8bdd01f34152f7b7d19a4e50c54211b0f8014bdcbb2794b6cb90021  waypoints_p4.json

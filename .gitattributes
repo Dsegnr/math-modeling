@@ -12,3 +12,6 @@
 *.py   text eol=lf
 *.md   text eol=lf
 *.csv  text eol=lf
+
+# Preserve the exact bytes of the frozen CUMCM supporting-material payload.
+cumcm-2026/support/** -text
